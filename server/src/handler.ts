@@ -90,7 +90,7 @@ const handleEvent = async (event: WebhookEvent) => {
 
   // Send the conversation history between the user and ChatGPT to ChatGPT API and get a response.
   const completion = await openAiApi.createChatCompletion({
-    model: "gpt-3.5-turbo",
+    model: "gpt-4",
     messages: [
       {
         role: "system",
